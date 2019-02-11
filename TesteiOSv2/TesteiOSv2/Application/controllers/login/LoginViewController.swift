@@ -12,6 +12,11 @@ class LoginViewController: UIViewController {
 
     var interactor:LoginInteractorInput!
     
+    @IBOutlet weak var txtEmail: RoundTextField!
+    @IBOutlet weak var txtPassword: RoundTextField!
+    @IBOutlet weak var btnLogin: ButtonStyle!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +35,9 @@ class LoginViewController: UIViewController {
     }
     */
 
+    @IBAction func doLogin(_ sender: Any) {
+    }
+    
 }
 
 extension LoginViewController: LoginPresenterProtocol {

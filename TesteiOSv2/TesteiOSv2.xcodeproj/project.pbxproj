@@ -22,6 +22,8 @@
 		59C989852211EAE700CACB47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C989842211EAE700CACB47 /* LoginViewController.swift */; };
 		59C989882211EFC100CACB47 /* logout2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C989862211EFC100CACB47 /* logout2.png */; };
 		59C989892211EFC100CACB47 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C989872211EFC100CACB47 /* Logo.png */; };
+		59C9898C2211F3D800CACB47 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9898B2211F3D800CACB47 /* UITextField.swift */; };
+		59C9898E2211F7A500CACB47 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9898D2211F7A500CACB47 /* ButtonStyle.swift */; };
 		59ECC9E82211AE9800FE8E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECC9E72211AE9800FE8E3E /* AppDelegate.swift */; };
 		59ECC9EA2211AE9800FE8E3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECC9E92211AE9800FE8E3E /* ViewController.swift */; };
 		59ECC9ED2211AE9800FE8E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59ECC9EB2211AE9800FE8E3E /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		59C989842211EAE700CACB47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59C989862211EFC100CACB47 /* logout2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout2.png; sourceTree = "<group>"; };
 		59C989872211EFC100CACB47 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		59C9898B2211F3D800CACB47 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		59C9898D2211F7A500CACB47 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		59ECC9E42211AE9800FE8E3E /* TesteiOSv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteiOSv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59ECC9E72211AE9800FE8E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59ECC9E92211AE9800FE8E3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		59C989692211BD1A00CACB47 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				59C9898A2211F3C800CACB47 /* style */,
 				59C9896C2211BD3000CACB47 /* img */,
 				59C9896B2211BD2A00CACB47 /* xibs */,
 				59C9896A2211BD2100CACB47 /* storyboard */,
@@ -207,6 +212,15 @@
 				59C989842211EAE700CACB47 /* LoginViewController.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		59C9898A2211F3C800CACB47 /* style */ = {
+			isa = PBXGroup;
+			children = (
+				59C9898B2211F3D800CACB47 /* UITextField.swift */,
+				59C9898D2211F7A500CACB47 /* ButtonStyle.swift */,
+			);
+			path = style;
 			sourceTree = "<group>";
 		};
 		59ECC9DB2211AE9800FE8E3E = {
@@ -582,8 +596,10 @@
 				59ECC9E82211AE9800FE8E3E /* AppDelegate.swift in Sources */,
 				59C989792211DD8A00CACB47 /* LoginInteractor.swift in Sources */,
 				59C989772211C4C500CACB47 /* BaseClass.swift in Sources */,
+				59C9898E2211F7A500CACB47 /* ButtonStyle.swift in Sources */,
 				59C989752211C0DC00CACB47 /* LoginProvider.swift in Sources */,
 				59C9897F2211E5A500CACB47 /* StatementList.swift in Sources */,
+				59C9898C2211F3D800CACB47 /* UITextField.swift in Sources */,
 				59C989722211C07400CACB47 /* UserAccount.swift in Sources */,
 				59C9897E2211E5A500CACB47 /* Statement.swift in Sources */,
 				59C989832211EA8400CACB47 /* LoginWireframe.swift in Sources */,
