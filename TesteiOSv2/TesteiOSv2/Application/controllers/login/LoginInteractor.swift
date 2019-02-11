@@ -51,7 +51,16 @@ class LoginInteractor: NSObject, LoginInteractorInput {
         
         if !password.isValidPassword {
             self.presenterOutput?.failPassword(error: "O campo senha deve ter pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico.")
+            return
         }
+        
+        if !email.isEmail {
+            if !email.isValidCPF {
+                self.presenterOutput?.failPassword(error: "Campo User inválido!")
+                return
+            }
+        }
+        
         self.provider.executeLogin(login: email, password: password) { (baseClass, error) in
             guard error == nil else {
                 self.presenterOutput?.failRequest(error: error!)
