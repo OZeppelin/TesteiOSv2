@@ -89,6 +89,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59C989642211BCD500CACB47 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				59C989672211BCFA00CACB47 /* infrastructure */,
+				59C989662211BCEB00CACB47 /* model */,
+				59C989652211BCE100CACB47 /* controllers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		59C989652211BCE100CACB47 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		59C989662211BCEB00CACB47 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		59C989672211BCFA00CACB47 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				59C989682211BD0900CACB47 /* extensions */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		59C989682211BD0900CACB47 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		59C989692211BD1A00CACB47 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				59C9896C2211BD3000CACB47 /* img */,
+				59C9896B2211BD2A00CACB47 /* xibs */,
+				59C9896A2211BD2100CACB47 /* storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		59C9896A2211BD2100CACB47 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		59C9896B2211BD2A00CACB47 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		59C9896C2211BD3000CACB47 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		59ECC9DB2211AE9800FE8E3E = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +184,8 @@
 		59ECC9E62211AE9800FE8E3E /* TesteiOSv2 */ = {
 			isa = PBXGroup;
 			children = (
+				59C989692211BD1A00CACB47 /* Resource */,
+				59C989642211BCD500CACB47 /* Application */,
 				59ECC9E72211AE9800FE8E3E /* AppDelegate.swift */,
 				59ECC9E92211AE9800FE8E3E /* ViewController.swift */,
 				59ECC9EB2211AE9800FE8E3E /* Main.storyboard */,
