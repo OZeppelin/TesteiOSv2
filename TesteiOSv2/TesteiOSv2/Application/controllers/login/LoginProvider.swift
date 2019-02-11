@@ -13,7 +13,7 @@ import ObjectMapper
 
 class LoginProvider: NSObject {
     
-    func executeLogin(login:String, password:String,completion:@escaping(_ baseClass:BaseClass?, _ error:Error?) -> Void) -> Void {
+    func executeLogin(login:String, password:String,completion:@escaping(_ baseClass:BaseClass?, _ error:String?) -> Void) -> Void {
         
         let param:Parameters = ["user":login,
                                 "password":password]
@@ -22,7 +22,7 @@ class LoginProvider: NSObject {
             .responseObject { (response:DataResponse<BaseClass>) in
                 switch response.result {
                     case .success(let baseClass): completion(baseClass, nil); break;
-                    case .failure(let error): completion(nil, error); break;
+                    case .failure(let error): completion(nil, error.localizedDescription); break;
                 }
         }
         
