@@ -14,7 +14,7 @@ enum RouterAPI : URLRequestConvertible {
     
     //USERS
     case login(param:Parameters)
-    case statements(id:String)
+    case statements(id:Int)
     
     var header : HTTPHeaders {
         return ["Content-Type":"application/x-www-form-urlencoded"]
@@ -47,7 +47,7 @@ enum RouterAPI : URLRequestConvertible {
         case .login:
             return path
         case .statements(let id):
-            return path + id
+            return "\(path)\(id)"
         
         }
     }
