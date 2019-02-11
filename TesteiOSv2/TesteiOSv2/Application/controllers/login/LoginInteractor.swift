@@ -9,7 +9,7 @@
 import Foundation
 
 protocol LoginInteractorInput: class {
-    func login(email:String,password:String)
+    func login(email:String?,password:String?)
 }
 
 protocol LoginPresenterOutput: class {
@@ -36,7 +36,19 @@ class LoginInteractor: NSObject, LoginInteractorInput {
     }()
     
     //MARK: LoginInteractorInput    
-    func login(email: String, password: String) {
+    func login(email: String?, password: String?) {
+        
+        guard let email = email, !email.isEmpty else {
+            self.presenterOutput?.failPassword(error: "Campo User obrigatório!")
+            return
+        }
+        
+        guard let password = password else {
+            self.presenterOutput?.failPassword(error: "Campo Password obrigatório!")
+            return
+        }
+        
+        
         if !password.isValidPassword {
             self.presenterOutput?.failPassword(error: "O campo senha deve ter pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico.")
         }

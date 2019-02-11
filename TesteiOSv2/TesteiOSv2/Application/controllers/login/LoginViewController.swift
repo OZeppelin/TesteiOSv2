@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -33,16 +33,30 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
     @IBAction func doLogin(_ sender: Any) {
+        self.interactor.login(email: self.txtEmail.text, password: self.txtPassword.text)
     }
     
 }
 
 extension LoginViewController: LoginPresenterProtocol {
-    func failPassword(error:String) { }
-    func failRequest(error:String) { }
-    func failResult(error:ErrorClass) { }
-    func success(userAccount:UserAccount) { }
+    func failPassword(error:String) {
+        self.alert(title: "Password!", msg: error, btn: "OK")
+    }
+    
+    func failRequest(error:String) {
+        self.alert(title: "Error Request", msg: error, btn: "OK")
+    }
+    
+    func failResult(error:ErrorClass) {
+        if let msg = error.message {
+            self.alert(title: "Error Result", msg: msg, btn: "OK")
+        }
+    }
+    
+    func success(userAccount:UserAccount) {
+        self.performSegue(withIdentifier: "segueStatement", sender: userAccount)
+    }
 }
