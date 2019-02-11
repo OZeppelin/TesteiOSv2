@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E529F7C065420CE0A5AD61D /* Pods_TesteiOSv2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8FC9130428781B459FF867 /* Pods_TesteiOSv2Tests.framework */; };
 		59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896D2211BD9500CACB47 /* RouterAPI.swift */; };
+		59C989712211C07400CACB47 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896F2211C07300CACB47 /* Error.swift */; };
+		59C989722211C07400CACB47 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C989702211C07300CACB47 /* UserAccount.swift */; };
 		59ECC9E82211AE9800FE8E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECC9E72211AE9800FE8E3E /* AppDelegate.swift */; };
 		59ECC9EA2211AE9800FE8E3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECC9E92211AE9800FE8E3E /* ViewController.swift */; };
 		59ECC9ED2211AE9800FE8E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59ECC9EB2211AE9800FE8E3E /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		41A9979BD751641CADB8EAD6 /* Pods_TesteiOSv2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSv2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47583AF3FF220D4AECCD7408 /* Pods-TesteiOSv2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSv2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSv2Tests/Pods-TesteiOSv2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		59C9896D2211BD9500CACB47 /* RouterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAPI.swift; sourceTree = "<group>"; };
+		59C9896F2211C07300CACB47 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		59C989702211C07300CACB47 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		59ECC9E42211AE9800FE8E3E /* TesteiOSv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteiOSv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59ECC9E72211AE9800FE8E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59ECC9E92211AE9800FE8E3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		59C989662211BCEB00CACB47 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				59C9896F2211C07300CACB47 /* Error.swift */,
+				59C989702211C07300CACB47 /* UserAccount.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -524,9 +530,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C989712211C07400CACB47 /* Error.swift in Sources */,
 				59ECC9EA2211AE9800FE8E3E /* ViewController.swift in Sources */,
 				59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */,
 				59ECC9E82211AE9800FE8E3E /* AppDelegate.swift in Sources */,
+				59C989722211C07400CACB47 /* UserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
