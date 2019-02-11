@@ -49,7 +49,7 @@ public final class Statement: Mappable, NSCoding {
   // MARK: NSCoding Protocol
   required public init(coder aDecoder: NSCoder) {
     self.statementList = aDecoder.decodeObject(forKey: SerializationKeys.statementList) as? [StatementList]
-    self.error = aDecoder.decodeObject(forKey: SerializationKeys.error) as? Error
+    self.error = aDecoder.decodeObject(forKey: SerializationKeys.error) as? ErrorClass
   }
 
   public func encode(with aCoder: NSCoder) {
