@@ -8,6 +8,7 @@ target 'TesteiOSv2' do
   # Pods for TesteiOSv2
      pod 'AlamofireObjectMapper', '~> 5.0'
      pod 'Alamofire', '~> 4.5'
+     pod 'MBProgressHUD', '~> 1.1.0'
 
   target 'TesteiOSv2Tests' do
     inherit! :search_paths
