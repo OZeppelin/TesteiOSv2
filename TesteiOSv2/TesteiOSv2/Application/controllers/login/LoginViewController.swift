@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        hideKeyboardWhenTappedAround()
         LoginWireframe.configurate(viewcontroller: self)
     }
     
@@ -32,6 +33,12 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segueStatement" {
+            let vc:StatementViewController = segue.destination as! StatementViewController
+            if let user = sender as? UserAccount {
+                vc.userAccount = user
+            }
+        }
     }
  
 
@@ -43,7 +50,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginPresenterProtocol {
     func failPassword(error:String) {
-        self.alert(title: "Password!", msg: error, btn: "OK")
+        self.alert(title: "TesteiOSv2", msg: error, btn: "OK")
     }
     
     func failRequest(error:String) {
