@@ -55,3 +55,15 @@ extension String {
     }
     
 }
+
+extension Float {
+    
+    func formatCurrency() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 2
+        formatter.locale = Locale(identifier: "pt_BR")
+        let result = formatter.string(from: self as NSNumber)
+        return result!
+    }
+}
