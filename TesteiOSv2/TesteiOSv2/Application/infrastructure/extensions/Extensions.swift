@@ -12,7 +12,7 @@ extension String {
     
     var isValidPassword: Bool {
         if !self.isEmpty {
-            let passwordPred = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,}$")
+            let passwordPred = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{4,}$")
             return passwordPred.evaluate(with: self)
         }
         return false        
