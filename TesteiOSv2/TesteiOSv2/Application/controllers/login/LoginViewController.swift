@@ -11,10 +11,16 @@ import UIKit
 class LoginViewController: UIViewController {
 
     var interactor:LoginInteractorInput!
+    let appSession = AppSession.sharedInstance
     
     @IBOutlet weak var txtEmail: RoundTextField!
     @IBOutlet weak var txtPassword: RoundTextField!
     @IBOutlet weak var btnLogin: ButtonStyle!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.txtEmail.text = self.appSession.email
+        self.txtPassword.text = self.appSession.password
+    }
     
     
     override func viewDidLoad() {

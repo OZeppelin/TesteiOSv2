@@ -24,6 +24,8 @@ class LoginInteractor: NSObject, LoginInteractorInput {
     private(set) var presenter : LoginPresenter
     private(set) var wireframe  : LoginWireframe
     
+    var appSession = AppSession.sharedInstance
+    
     weak var presenterOutput:LoginPresenterOutput?
     
     init(presenter:LoginPresenter, wireframe:LoginWireframe) {
@@ -35,7 +37,7 @@ class LoginInteractor: NSObject, LoginInteractorInput {
         return LoginProvider.init()
     }()
     
-    //MARK: LoginInteractorInput    
+    //MARK: LoginInteractorInput
     func login(email: String?, password: String?) {
         
         guard let email = email, !email.isEmpty else {
@@ -73,6 +75,7 @@ class LoginInteractor: NSObject, LoginInteractorInput {
                 }
                 
                 if let userAccount = base.userAccount {
+                    self.appSession.createSession(email: email, psw: password)
                     self.presenterOutput?.success(userAccount: userAccount)
                 }
             }

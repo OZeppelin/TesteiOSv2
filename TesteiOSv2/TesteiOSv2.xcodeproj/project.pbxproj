@@ -11,6 +11,7 @@
 		592A10F222134C200077006D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F122134C200077006D /* CardView.swift */; };
 		592A10F522134CF30077006D /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F322134CF30077006D /* StatementTableViewCell.swift */; };
 		592A10F622134CF30077006D /* StatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592A10F422134CF30077006D /* StatementTableViewCell.xib */; };
+		593F2F9A2213670200311D68 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F2F992213670200311D68 /* AppSession.swift */; };
 		59513A2D22120081001E6AD9 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59513A2C22120081001E6AD9 /* Extensions+UIViewController.swift */; };
 		59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896D2211BD9500CACB47 /* RouterAPI.swift */; };
 		59C989712211C07400CACB47 /* ErrorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896F2211C07300CACB47 /* ErrorClass.swift */; };
@@ -69,6 +70,7 @@
 		592A10F122134C200077006D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		592A10F322134CF30077006D /* StatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewCell.swift; sourceTree = "<group>"; };
 		592A10F422134CF30077006D /* StatementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementTableViewCell.xib; sourceTree = "<group>"; };
+		593F2F992213670200311D68 /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 		59513A2C22120081001E6AD9 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		59C9896D2211BD9500CACB47 /* RouterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAPI.swift; sourceTree = "<group>"; };
 		59C9896F2211C07300CACB47 /* ErrorClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorClass.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				59C989682211BD0900CACB47 /* extensions */,
 				59C9896D2211BD9500CACB47 /* RouterAPI.swift */,
+				593F2F992213670200311D68 /* AppSession.swift */,
 			);
 			path = infrastructure;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				59C989812211E87800CACB47 /* LoginPresenter.swift in Sources */,
 				59C989712211C07400CACB47 /* ErrorClass.swift in Sources */,
 				59CBF85722130FBB00D778EF /* StatementWireframe.swift in Sources */,
+				593F2F9A2213670200311D68 /* AppSession.swift in Sources */,
 				59C9897B2211E29200CACB47 /* Extensions.swift in Sources */,
 				59CBF84F2212094E00D778EF /* StatementViewController.swift in Sources */,
 				592A10F522134CF30077006D /* StatementTableViewCell.swift in Sources */,
