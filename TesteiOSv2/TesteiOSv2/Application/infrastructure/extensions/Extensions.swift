@@ -54,6 +54,13 @@ extension String {
         return dv1 == numbers[9] && dv2 == numbers[10]
     }
     
+    var convertDate:String {
+        let value = self
+        var arrValue = value.components(separatedBy: "-")
+        var convert = "\(arrValue[2])/\(arrValue[1])/\(arrValue[0])"
+        return convert
+    }
+    
 }
 
 extension Float {
