@@ -216,16 +216,28 @@
                                 <color key="textColor" red="0.28235294117647058" green="0.32941176470588235" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="104" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h5h-GX-QSt">
+                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WYh-et-jOX" id="JCV-X0-XBL"/>
+                                    <outlet property="delegate" destination="WYh-et-jOX" id="28B-9L-CEh"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eqm-u4-L6s" firstAttribute="bottom" secondItem="Xu1-dd-McY" secondAttribute="bottom" constant="435" id="3no-zO-wUT"/>
                             <constraint firstItem="Xu1-dd-McY" firstAttribute="trailing" secondItem="eqm-u4-L6s" secondAttribute="trailing" id="GwD-7k-oeV"/>
+                            <constraint firstItem="h5h-GX-QSt" firstAttribute="leading" secondItem="eqm-u4-L6s" secondAttribute="leading" id="MlU-Gx-VP4"/>
                             <constraint firstItem="Xu1-dd-McY" firstAttribute="top" secondItem="NUn-AZ-P2j" secondAttribute="top" id="NkG-Co-5Pe"/>
                             <constraint firstItem="igk-ek-LaU" firstAttribute="top" secondItem="Xu1-dd-McY" secondAttribute="bottom" constant="14" id="QSS-Ak-4r4"/>
+                            <constraint firstItem="h5h-GX-QSt" firstAttribute="trailing" secondItem="eqm-u4-L6s" secondAttribute="trailing" id="R53-Zq-twd"/>
                             <constraint firstItem="igk-ek-LaU" firstAttribute="leading" secondItem="eqm-u4-L6s" secondAttribute="leading" constant="18" id="Wd8-sk-tao"/>
                             <constraint firstItem="Xu1-dd-McY" firstAttribute="leading" secondItem="eqm-u4-L6s" secondAttribute="leading" id="X4M-Aa-BLw"/>
                             <constraint firstItem="eqm-u4-L6s" firstAttribute="trailing" secondItem="igk-ek-LaU" secondAttribute="trailing" constant="257" id="gCV-WO-eVy"/>
+                            <constraint firstItem="h5h-GX-QSt" firstAttribute="bottom" secondItem="eqm-u4-L6s" secondAttribute="bottom" id="pol-RZ-wPK"/>
+                            <constraint firstItem="h5h-GX-QSt" firstAttribute="top" secondItem="igk-ek-LaU" secondAttribute="bottom" constant="8" id="zcn-8L-me5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eqm-u4-L6s"/>
                     </view>
@@ -235,6 +247,7 @@
                         <outlet property="lbAccount" destination="bXa-0s-6Kg" id="vGw-UY-x0p"/>
                         <outlet property="lbBalance" destination="q90-4m-CwL" id="6Al-4J-h09"/>
                         <outlet property="lbName" destination="kpG-tf-cTl" id="TR3-NB-NsQ"/>
+                        <outlet property="tbView" destination="h5h-GX-QSt" id="cf4-0z-4K5"/>
                         <outlet property="viewHeader" destination="Xu1-dd-McY" id="OBE-Xh-0v7"/>
                     </connections>
                 </viewController>
