@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E529F7C065420CE0A5AD61D /* Pods_TesteiOSv2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8FC9130428781B459FF867 /* Pods_TesteiOSv2Tests.framework */; };
+		592A10F222134C200077006D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F122134C200077006D /* CardView.swift */; };
+		592A10F522134CF30077006D /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F322134CF30077006D /* StatementTableViewCell.swift */; };
+		592A10F622134CF30077006D /* StatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592A10F422134CF30077006D /* StatementTableViewCell.xib */; };
 		59513A2D22120081001E6AD9 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59513A2C22120081001E6AD9 /* Extensions+UIViewController.swift */; };
 		59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896D2211BD9500CACB47 /* RouterAPI.swift */; };
 		59C989712211C07400CACB47 /* ErrorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896F2211C07300CACB47 /* ErrorClass.swift */; };
@@ -63,6 +66,9 @@
 		1B2F6C34CD5BAE4C27F1A5A1 /* Pods-TesteiOSv2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSv2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSv2UITests/Pods-TesteiOSv2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		41A9979BD751641CADB8EAD6 /* Pods_TesteiOSv2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSv2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47583AF3FF220D4AECCD7408 /* Pods-TesteiOSv2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSv2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSv2Tests/Pods-TesteiOSv2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		592A10F122134C200077006D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		592A10F322134CF30077006D /* StatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewCell.swift; sourceTree = "<group>"; };
+		592A10F422134CF30077006D /* StatementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementTableViewCell.xib; sourceTree = "<group>"; };
 		59513A2C22120081001E6AD9 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		59C9896D2211BD9500CACB47 /* RouterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAPI.swift; sourceTree = "<group>"; };
 		59C9896F2211C07300CACB47 /* ErrorClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorClass.swift; sourceTree = "<group>"; };
@@ -215,6 +221,8 @@
 		59C9896B2211BD2A00CACB47 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
+				592A10F322134CF30077006D /* StatementTableViewCell.swift */,
+				592A10F422134CF30077006D /* StatementTableViewCell.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			children = (
 				59C9898B2211F3D800CACB47 /* UITextField.swift */,
 				59C9898D2211F7A500CACB47 /* ButtonStyle.swift */,
+				592A10F122134C200077006D /* CardView.swift */,
 			);
 			path = style;
 			sourceTree = "<group>";
@@ -438,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59ECC9F22211AE9900FE8E3E /* LaunchScreen.storyboard in Resources */,
+				592A10F622134CF30077006D /* StatementTableViewCell.xib in Resources */,
 				59ECC9EF2211AE9900FE8E3E /* Assets.xcassets in Resources */,
 				59C989892211EFC100CACB47 /* Logo.png in Resources */,
 				59C989882211EFC100CACB47 /* logout2.png in Resources */,
@@ -620,6 +630,7 @@
 				59CBF85722130FBB00D778EF /* StatementWireframe.swift in Sources */,
 				59C9897B2211E29200CACB47 /* Extensions.swift in Sources */,
 				59CBF84F2212094E00D778EF /* StatementViewController.swift in Sources */,
+				592A10F522134CF30077006D /* StatementTableViewCell.swift in Sources */,
 				59ECC9EA2211AE9800FE8E3E /* ViewController.swift in Sources */,
 				59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */,
 				59CBF8532212F2F100D778EF /* StatementInteractor.swift in Sources */,
@@ -631,6 +642,7 @@
 				59C989752211C0DC00CACB47 /* LoginProvider.swift in Sources */,
 				59513A2D22120081001E6AD9 /* Extensions+UIViewController.swift in Sources */,
 				59C9897F2211E5A500CACB47 /* StatementList.swift in Sources */,
+				592A10F222134C200077006D /* CardView.swift in Sources */,
 				59C9898C2211F3D800CACB47 /* UITextField.swift in Sources */,
 				59C989722211C07400CACB47 /* UserAccount.swift in Sources */,
 				59C9897E2211E5A500CACB47 /* Statement.swift in Sources */,
