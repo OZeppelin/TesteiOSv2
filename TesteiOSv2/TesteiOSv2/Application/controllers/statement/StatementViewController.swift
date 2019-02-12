@@ -27,6 +27,7 @@ class StatementViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.showLoading()
         setupFields()
         StatementWireframe.configurate(viewcontroller: self)
         
@@ -105,10 +106,12 @@ extension StatementViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension StatementViewController: StatementPresenterProtocol {
     func failureView(error:String) {
+        self.hideLoading()
         self.alert(title: "TesteiOSv2", msg: error, btn: "OK")
     }
     
     func listStatement(statement:[StatementList]) {
+        self.hideLoading()
         self.loadXib(statement: statement)
     }
 }

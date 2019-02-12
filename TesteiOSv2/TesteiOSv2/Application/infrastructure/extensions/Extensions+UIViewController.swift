@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 extension UIViewController {
     
@@ -27,6 +28,18 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func showLoading(){
+        DispatchQueue.main.async {
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+        }
+    }
+    
+    func hideLoading(){
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
     }
     
 }

@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
  
 
     @IBAction func doLogin(_ sender: Any) {
+        self.showLoading()
         self.interactor.login(email: self.txtEmail.text, password: self.txtPassword.text)
     }
     
@@ -50,20 +51,24 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginPresenterProtocol {
     func failPassword(error:String) {
+        self.hideLoading()
         self.alert(title: "TesteiOSv2", msg: error, btn: "OK")
     }
     
     func failRequest(error:String) {
+        self.hideLoading()
         self.alert(title: "Error Request", msg: error, btn: "OK")
     }
     
     func failResult(error:ErrorClass) {
+        self.hideLoading()
         if let msg = error.message {
             self.alert(title: "Error Result", msg: msg, btn: "OK")
         }
     }
     
     func success(userAccount:UserAccount) {
+        self.hideLoading()
         self.performSegue(withIdentifier: "segueStatement", sender: userAccount)
     }
 }
