@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import KeychainSwift
 
 class AppSession {
+    
+    private let keychain = KeychainSwift()
     
     static let sharedInstance : AppSession = {
         let instance = AppSession()
@@ -16,24 +19,17 @@ class AppSession {
     }()
     
     func createSession(email:String, psw:String) {
-        UserDefaults.standard.set(email, forKey: "keyEmail")
-        UserDefaults.standard.set(psw, forKey: "keyPws")
-        UserDefaults.standard.synchronize()
+        keychain.set(email, forKey: "keyEmail")
+        keychain.set(psw, forKey: "keyPws")
     }
     
     var email : String {
-        if let email = UserDefaults.standard.object(forKey: "keyEmail") as? String { return email }
+        if let email = keychain.get("keyEmail") { return email }
         return ""
     }
     
     var password : String {
-        if let password = UserDefaults.standard.object(forKey: "keyPws") as? String { return password }
+        if let password = keychain.get("keyPws") { return password }
         return ""
-    }
-    
-    func dropSession() {
-        UserDefaults.standard.removeObject(forKey: "keyEmail")
-        UserDefaults.standard.removeObject(forKey: "keyPws")
-        UserDefaults.standard.synchronize()
     }
 }

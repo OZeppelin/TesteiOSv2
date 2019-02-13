@@ -9,6 +9,7 @@ target 'TesteiOSv2' do
      pod 'AlamofireObjectMapper', '~> 5.0'
      pod 'Alamofire', '~> 4.5'
      pod 'MBProgressHUD', '~> 1.1.0'
+     pod 'KeychainSwift', '~> 13.0'
 
   target 'TesteiOSv2Tests' do
     inherit! :search_paths

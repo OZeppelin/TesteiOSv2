@@ -11,6 +11,7 @@
 		592A10F222134C200077006D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F122134C200077006D /* CardView.swift */; };
 		592A10F522134CF30077006D /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A10F322134CF30077006D /* StatementTableViewCell.swift */; };
 		592A10F622134CF30077006D /* StatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592A10F422134CF30077006D /* StatementTableViewCell.xib */; };
+		593643EA22149F170049BD65 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9897A2211E29200CACB47 /* Extensions.swift */; };
 		593F2F9A2213670200311D68 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F2F992213670200311D68 /* AppSession.swift */; };
 		59513A2D22120081001E6AD9 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59513A2C22120081001E6AD9 /* Extensions+UIViewController.swift */; };
 		59C9896E2211BD9500CACB47 /* RouterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9896D2211BD9500CACB47 /* RouterAPI.swift */; };
@@ -486,6 +487,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TesteiOSv2/Pods-TesteiOSv2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
@@ -495,6 +497,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
@@ -661,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59ECC9FD2211AE9900FE8E3E /* TesteiOSv2Tests.swift in Sources */,
+				593643EA22149F170049BD65 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
