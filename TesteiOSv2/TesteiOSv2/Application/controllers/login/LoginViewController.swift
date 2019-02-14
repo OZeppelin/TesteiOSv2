@@ -56,14 +56,10 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginPresenterProtocol {
-    func failPassword(error:String) {
+    
+    func showError(error:String) {
         self.hideLoading()
         self.alert(title: "TesteiOSv2", msg: error, btn: "OK")
-    }
-    
-    func failRequest(error:String) {
-        self.hideLoading()
-        self.alert(title: "Error Request", msg: error, btn: "OK")
     }
     
     func failResult(error:ErrorClass) {

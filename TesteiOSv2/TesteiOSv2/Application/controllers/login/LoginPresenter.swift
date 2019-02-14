@@ -9,8 +9,7 @@
 import Foundation
 
 protocol LoginPresenterProtocol: class {
-    func failPassword(error:String)
-    func failRequest(error:String)
+    func showError(error:String)
     func failResult(error:ErrorClass)
     func success(userAccount:UserAccount)
 }
@@ -20,12 +19,8 @@ class LoginPresenter: NSObject, LoginPresenterOutput {
     weak var output:LoginPresenterProtocol?
     
     //MARK: LoginPresenterOutput
-    func failPassword(error:String) {
-        self.output?.failPassword(error: error)
-    }
-    
-    func failRequest(error:String) {
-        self.output?.failRequest(error: error)
+    func failed(error:String) {
+        self.output?.showError(error: error)
     }
     
     func failResult(error:ErrorClass) {

@@ -13,8 +13,7 @@ protocol LoginInteractorInput: class {
 }
 
 protocol LoginPresenterOutput: class {
-    func failPassword(error:String)
-    func failRequest(error:String)
+    func failed(error:String)
     func failResult(error:ErrorClass)
     func success(userAccount:UserAccount)
 }
@@ -41,31 +40,31 @@ class LoginInteractor: NSObject, LoginInteractorInput {
     func login(email: String?, password: String?) {
         
         guard let email = email, !email.isEmpty else {
-            self.presenterOutput?.failPassword(error: "Campo User obrigatório!")
+            self.presenterOutput?.failed(error: "Campo User obrigatório!")
             return
         }
         
         guard let password = password else {
-            self.presenterOutput?.failPassword(error: "Campo Password obrigatório!")
+            self.presenterOutput?.failed(error: "Campo Password obrigatório!")
             return
         }
         
         
         if !password.isValidPassword {
-            self.presenterOutput?.failPassword(error: "O campo senha deve ter pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico.")
+            self.presenterOutput?.failed(error: "O campo senha deve ter pelo menos uma letra maiuscula, um caracter especial e um caracter alfanumérico.")
             return
         }
         
         if !email.isEmail {
             if !email.isValidCPF {
-                self.presenterOutput?.failPassword(error: "Campo User inválido!")
+                self.presenterOutput?.failed(error: "Campo User inválido!")
                 return
             }
         }
         
         self.provider.executeLogin(login: email, password: password) { (baseClass, error) in
             guard error == nil else {
-                self.presenterOutput?.failRequest(error: error!)
+                self.presenterOutput?.failed(error: error!)
                 return
             }
             
